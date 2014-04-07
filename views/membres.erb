@@ -1,0 +1,16 @@
+<script id="container_div" type="text/template">
+  <h1>Nos Membres</h1>
+
+  <ul>
+
+    {{#membres}}
+      <li>
+        User ID: #<a href="/membres/show/{{id}}">{{id}}</a><br />
+        Nom et prénom : {{nom}} {{prenom}}
+      </li>
+    {{/membres}}
+
+  </ul>
+</script>
+
+<script src="/js/membres.js"></script>

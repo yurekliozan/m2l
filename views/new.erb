@@ -1,0 +1,27 @@
+
+<h1>Nouveau Membre</h1>
+<form action="/new" method="post">
+	<fieldset> 
+		*Nom:
+
+    <input  type="text" name="nom" placeholder="Entrez votre nom ici" value="{{nom}}" required />
+		 <br />
+		* Prenom:
+		  <input type="text" name="prenom" value="{{prenom}}" required />
+		<br />
+		* Date de Naissance:
+		<input type="date" name="datenaiss" value="{{datenaiss}}" required />
+		<br />
+		*Adresse:
+		  <input type="text" name="adresse" value="{{adresse}}"  />
+		  <br />
+		Code Postal : 
+		  <input type="number" name="cp" value="{{cp}}" />
+		 <br />
+		Numero de Téléphone : 
+		 <input type="tel" name="numtel" value="{{numtel}}" />
+		<br />
+    <input type="submit" value="Ajouter" />
+		<input type="reset" value="Supprimer" />
+	</fieldset>
+</form>
